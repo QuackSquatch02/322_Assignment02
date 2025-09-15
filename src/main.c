@@ -18,7 +18,12 @@ int main(int argc, char *argv[])
 // To change the command-line parameters, modify the following line:
 // lanuch.json.10:
 // "args": ["--help"], 
-// "args": ["--subtraction", "5", "3.0"] , // argues! attention not ["--subtraction 5 3.0"] <-- whole string in argv[1]!!!
+// "args": ["--sub", "5", "3.0"] , // argues! attention not ["--subtraction 5 3.0"] <-- whole string in argv[1]!!!
+// "args": ["--multiply", "5", "3.0"] , // argues! attention not ["--multiply 5 3.0"] <-- whole string in argv[1]!!!
+// "args": ["--add", "5", "3.0"] , // argues! attention not ["--add 5 3.0"] <-- whole string in argv[1]!!!
+// "args": ["--square", "5", "3.0"] , // argues! attention not ["--square 5 3.0"] <-- whole string in argv[1]!!!
+// "args": ["--cube", "5", "3.0"] , // argues! attention not ["--cube 5 3.0"] <-- whole string in argv[1]!!!
+// "args": ["--pow", "5", "3.0"] , // argues! attention not ["--pow 5 3.0"] <-- whole string in argv[1]!!!
 // etc.
 
     int failed_tests  = 0;
@@ -41,10 +46,9 @@ int main(int argc, char *argv[])
             printf("  --author             Print author name\n");
             printf("  --authorship         Print academic honesty statement\n");
             printf("  --addition a b       Add two numbers\n");
-            printf("  --subtraction a b    Subtract two numbers\n");
-            printf("  --multiplication a b Multiply two numbers\n");
-            printf("  --division a b       Divide two numbers\n");
-            printf("  --power a b          Raise a to the power of b\n");
+            printf("  --sub a b    Subtract two numbers\n");
+            printf("  --multiply a b Multiply two numbers\n");
+            printf("  --pow a b          Raise a to the power of b\n");
             printf("  --square a           Square of a number\n");
             printf("  --cube a             Cube of a number\n");
         }
