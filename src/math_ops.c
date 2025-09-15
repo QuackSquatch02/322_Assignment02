@@ -1,6 +1,10 @@
 #include "math_ops.h"
 
 // --------- FUNCTION IMPLEMENTATIONS ------------
+float sub(float a, float b)
+{
+    return a - b;
+}
 
 
 float multiply(float x, float y) 
