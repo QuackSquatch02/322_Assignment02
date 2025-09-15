@@ -2,7 +2,7 @@
 #define MATH_OPS_H
 
 // Function Prototypes
-
+float sub(float a, float b);
 float multiply(float x, float y);
 float add(float x, float y) ;
 float square(float x) ;
